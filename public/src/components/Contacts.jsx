@@ -22,10 +22,9 @@ export default function Contacts({ contacts, changeChat }) {
       {currentUserImage && currentUserImage && (
         <Container>
           <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h3>snappy</h3>
+            <h3>React Chat</h3>
           </div>
-          <div className="contacts">
+          <div className="contacts">  
             {contacts.map((contact, index) => {
               return (
                 <div
@@ -91,7 +90,7 @@ const Container = styled.div`
     &::-webkit-scrollbar {
       width: 0.2rem;
       &-thumb {
-        background-color: #ffffff39;
+        background-color: #65636334;
         width: 0.1rem;
         border-radius: 1rem;
       }
